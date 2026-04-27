@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Marvel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="" class="logo-topo">
+
+        <!-- INÍCIO -->
+        <div id="inicio" class="card">
+            <h2>Descubra qual herói você é!</h2>
+            <button id="btnIniciar" class="btn-quiz">Começar</button>
+        </div>
+
+        <!-- QUIZ -->
+        <div id="quiz" class="hidden">
+
+            <div class="quiz-box">
+                <div class="question-box">
+                    <div class="question-mark">?</div>
+                    <h2 id="pergunta"></h2>
+                </div>
+                <div id="opcoes" class="opcoes-grid"></div>
+            </div>
+        </div>
+
+        <!-- RESULTADO -->
+        <div id="resultado" class="card hidden">
+            <h2>Você é:</h2>
+            <img id="imgPersonagem">
+            <h3 id="nomePersonagem"></h3>
+            <p id="descricao"></p>
+            <p id="pontuacao"></p>
+            <button id="btnReiniciar" class="btn-quiz">Refazer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
